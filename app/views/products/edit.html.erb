@@ -8,73 +8,73 @@
 </div>
 <div>
 	<% if @product.categories.include?(Category.find(1)) %>
-	<%= check_box_tag (:perfumes), "yes", true %>
+	<%= check_box_tag (:perfumes), "1", true %>
 	<% else %>
-	<%= check_box_tag (:perfumes) %>
+	<%= check_box_tag (:perfumes), "1" %>
 	<% end %>
 	<%= label_tag(:perfumes, "Perfumes") %>
 </div>
 <div>
 	<% if @product.categories.include?(Category.find(2)) %>
-	<%= check_box_tag (:libros), "yes", true %>
+	<%= check_box_tag (:libros), "2", true %>
 	<% else %>
-	<%= check_box_tag (:libros) %>
+	<%= check_box_tag (:libros), "2" %>
 	<% end %>
 	<%= label_tag(:libros, "Libros") %>
 </div>
 <div>
 	<% if @product.categories.include?(Category.find(3)) %>
-	<%= check_box_tag (:tecnologia), "yes", true %>
+	<%= check_box_tag (:tecnologia), "3", true %>
 	<% else %>
-	<%= check_box_tag (:tecnologia) %>
+	<%= check_box_tag (:tecnologia), "3" %>
 	<% end %>
 	<%= label_tag(:tecnologia, "Tecnología") %>
 </div>
 <div>
 	<% if @product.categories.include?(Category.find(4)) %>
-	<%= check_box_tag (:electrodomesticos), "yes", true %>
+	<%= check_box_tag (:electrodomesticos), "4", true %>
 	<% else %>
-	<%= check_box_tag (:electrodomesticos) %>
+	<%= check_box_tag (:electrodomesticos), "4" %>
 	<% end %>
 	<%= label_tag(:electrodomesticos, "Electrodomésticos") %>
 </div>
 <div>
 	<% if @product.categories.include?(Category.find(5)) %>
-	<%= check_box_tag (:aseo), "yes", true %>
+	<%= check_box_tag (:aseo), "5", true %>
 	<% else %>
-	<%= check_box_tag (:aseo) %>
+	<%= check_box_tag (:aseo), "5" %>
 	<% end %>
 	<%= label_tag(:aseo, "Aseo") %>
 </div>
 <div>
 	<% if @product.categories.include?(Category.find(6)) %>
-	<%= check_box_tag (:juguetes), "yes", true %>
+	<%= check_box_tag (:juguetes), "6", true %>
 	<% else %>
-	<%= check_box_tag (:juguetes) %>
+	<%= check_box_tag (:juguetes), "6" %>
 	<% end %>
 	<%= label_tag(:juguetes, "Juguetes") %>
 </div>
 <div>
 	<% if @product.categories.include?(Category.find(7)) %>
-	<%= check_box_tag (:ropa), "yes", true %>
+	<%= check_box_tag (:ropa), "7", true %>
 	<% else %>
-	<%= check_box_tag (:ropa) %>
+	<%= check_box_tag (:ropa), "7" %>
 	<% end %>
 	<%= label_tag(:ropa, "Ropa") %>
 </div>
 <div>
 	<% if @product.categories.include?(Category.find(8)) %>
-	<%= check_box_tag (:oficina), "yes", true %>
+	<%= check_box_tag (:oficina), "8", true %>
 	<% else %>
-	<%= check_box_tag (:oficina) %>
+	<%= check_box_tag (:oficina), "8" %>
 	<% end %>
 	<%= label_tag(:oficina, "Oficina") %>
 </div>
 <div>
 	<% if @product.categories.include?(Category.find(9)) %>
-	<%= check_box_tag (:mascota), "yes", true %>
+	<%= check_box_tag (:mascota), "9", true %>
 	<% else %>
-	<%= check_box_tag (:mascota) %>
+	<%= check_box_tag (:mascota), "9" %>
 	<% end %>
 	<%= label_tag(:mascota, "Mascotas") %>
 </div>
