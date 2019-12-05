@@ -1,0 +1,29 @@
+<h1>Products</h1>
+<%= link_to "Nuevo Producto", new_product_path %>
+<table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Categorías</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @product.each do |i| %>
+      <tr>
+        <td><%= i.name %></td>
+        <td><%= i.price %></td>
+        <td>
+          <% i.categories.each do |j| %>
+          <%= j.name %>
+          <% end %>
+        </td>
+        <td>
+          <a href="/products/<%= i.id %>/edit">Editar</a> 
+          <a href="/products/<%= i.id %>" data-method="delete">eliminar</a>
+        </td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>

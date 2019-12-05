@@ -1,0 +1,84 @@
+<h1>Editar Producto</h1>
+<%= form_for @product do |f| %>
+<div>
+	<%= f.text_field :name, placeholder: "Nombre del producto" %>
+</div>
+<div>
+	<%= f.text_field :price, placeholder: "Precio del producto" %>
+</div>
+<div>
+	<% if @product.categories.include?(Category.find(1)) %>
+	<%= check_box_tag (:perfumes), "yes", true %>
+	<% else %>
+	<%= check_box_tag (:perfumes) %>
+	<% end %>
+	<%= label_tag(:perfumes, "Perfumes") %>
+</div>
+<div>
+	<% if @product.categories.include?(Category.find(2)) %>
+	<%= check_box_tag (:libros), "yes", true %>
+	<% else %>
+	<%= check_box_tag (:libros) %>
+	<% end %>
+	<%= label_tag(:libros, "Libros") %>
+</div>
+<div>
+	<% if @product.categories.include?(Category.find(3)) %>
+	<%= check_box_tag (:tecnologia), "yes", true %>
+	<% else %>
+	<%= check_box_tag (:tecnologia) %>
+	<% end %>
+	<%= label_tag(:tecnologia, "Tecnología") %>
+</div>
+<div>
+	<% if @product.categories.include?(Category.find(4)) %>
+	<%= check_box_tag (:electrodomesticos), "yes", true %>
+	<% else %>
+	<%= check_box_tag (:electrodomesticos) %>
+	<% end %>
+	<%= label_tag(:electrodomesticos, "Electrodomésticos") %>
+</div>
+<div>
+	<% if @product.categories.include?(Category.find(5)) %>
+	<%= check_box_tag (:aseo), "yes", true %>
+	<% else %>
+	<%= check_box_tag (:aseo) %>
+	<% end %>
+	<%= label_tag(:aseo, "Aseo") %>
+</div>
+<div>
+	<% if @product.categories.include?(Category.find(6)) %>
+	<%= check_box_tag (:juguetes), "yes", true %>
+	<% else %>
+	<%= check_box_tag (:juguetes) %>
+	<% end %>
+	<%= label_tag(:juguetes, "Juguetes") %>
+</div>
+<div>
+	<% if @product.categories.include?(Category.find(7)) %>
+	<%= check_box_tag (:ropa), "yes", true %>
+	<% else %>
+	<%= check_box_tag (:ropa) %>
+	<% end %>
+	<%= label_tag(:ropa, "Ropa") %>
+</div>
+<div>
+	<% if @product.categories.include?(Category.find(8)) %>
+	<%= check_box_tag (:oficina), "yes", true %>
+	<% else %>
+	<%= check_box_tag (:oficina) %>
+	<% end %>
+	<%= label_tag(:oficina, "Oficina") %>
+</div>
+<div>
+	<% if @product.categories.include?(Category.find(9)) %>
+	<%= check_box_tag (:mascota), "yes", true %>
+	<% else %>
+	<%= check_box_tag (:mascota) %>
+	<% end %>
+	<%= label_tag(:mascota, "Mascotas") %>
+</div>
+<div>
+	<%= f.submit "Publicar Producto" %>
+</div>
+<% end %> 

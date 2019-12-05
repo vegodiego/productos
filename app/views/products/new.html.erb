@@ -1,0 +1,48 @@
+<h1>Nuevo Producto</h1>
+<%= form_for @product do |f| %>
+<div>
+	<%= f.text_field :name, placeholder: "Nombre del producto" %>
+</div>
+<div>
+	<%= f.text_field :price, placeholder: "Precio del producto" %>
+</div>
+<div>
+	<%= check_box_tag(:perfumes) %>
+	<%= label_tag(:perfumes, "Perfumes") %>
+</div>
+<div>
+	<%= check_box_tag(:libros) %>
+	<%= label_tag(:libros, "Libros") %>
+</div>
+<div>
+	<%= check_box_tag(:tecnologia) %>
+	<%= label_tag(:tecnologia, "Tecnología") %>
+</div>
+<div>
+	<%= check_box_tag(:electrodomesticos) %>
+	<%= label_tag(:electrodomesticos, "Electrodomésticos") %>
+</div>
+<div>
+	<%= check_box_tag(:aseo) %>
+	<%= label_tag(:aseo, "Aseo") %>
+</div>
+<div>
+	<%= check_box_tag(:juguetes) %>
+	<%= label_tag(:juguetes, "Juguetes") %>
+</div>
+<div>
+	<%= check_box_tag(:ropa) %>
+	<%= label_tag(:ropa, "Ropa") %>
+</div>
+<div>
+	<%= check_box_tag(:oficina) %>
+	<%= label_tag(:oficina, "Oficina") %>
+</div>
+<div>
+	<%= check_box_tag(:mascotas) %>
+	<%= label_tag(:mascotas, "Mascotas") %>
+</div>
+<div>
+	<%= f.submit "Publicar Producto" %>
+</div>
+<% end %> 
